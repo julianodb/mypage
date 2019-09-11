@@ -1,0 +1,19 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "description": "My Page project for Juliano",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianodb/mypage.git"
+  },
+  "author": "Juliano Barboza <julianodawid@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianodb/mypage/issues"
+  },
+  "homepage": "https://github.com/julianodb/mypage#readme"
+}
