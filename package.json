@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/julianodb/mypage/issues"
   },
-  "homepage": "https://github.com/julianodb/mypage#readme"
+  "homepage": "https://github.com/julianodb/mypage#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
