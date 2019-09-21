@@ -9,4 +9,11 @@ describe("HelloWorld.vue", () => {
     });
     expect(wrapper.text()).toMatch(msg);
   });
+  it("can handle strange characters", () => {
+    const msg = "!#$%&/()=?¡¿ñÑ^}`~°|¬¬";
+    const wrapper = shallowMount(HelloWorld, {
+      propsData: { msg }
+    });
+    expect(wrapper.find("h1").text()).toBe(msg);
+  });
 });
