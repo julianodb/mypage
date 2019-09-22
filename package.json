@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit",
+    "test:unit": "vue-cli-service help test:unit",
     "watch": "vue-cli-service test:unit --watch"
   },
   "dependencies": {
@@ -110,11 +110,13 @@
   "lint-staged": {
     "src/**/*.{js,jsx,vue}": [
       "vue-cli-service lint", 
-      "vue-cli-service test:unit", 
+      "vue-cli-service test:unit --findRelatedTests", 
       "git add"
     ]
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
