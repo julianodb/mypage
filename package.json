@@ -109,12 +109,12 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,vue}": [
-      "vue-cli-service lint", "git add"
+      "vue-cli-service lint", 
+      "vue-cli-service test:unit", 
+      "git add"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }
