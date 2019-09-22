@@ -108,15 +108,14 @@
     "testResultsProcessor": "jest-sonar-reporter"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,vue}": [
-      "vue-cli-service lint", 
-      "vue-cli-service test:unit --findRelatedTests", 
+    "./**/*.{js,jsx,vue}": [
+      "vue-cli-service lint",  
       "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && vue-cli-service test:unit"
     }
   }
 }
