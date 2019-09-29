@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\Juliano\Desktop\mypage\tests\unit\about.spec.js">
-    <testCase name="About.vue has a title" duration="27"/>
-  </file>
-  <file path="C:\Users\Juliano\Desktop\mypage\tests\unit\example.spec.js">
-    <testCase name="HelloWorld.vue renders props.msg when passed" duration="35"/>
-    <testCase name="HelloWorld.vue can handle strange characters" duration="18"/>
+  <file path="C:\Users\Juliano\Desktop\mypage\tests\unit\app.spec.js">
+    <testCase name="App.vue has a menu burger" duration="28"/>
+    <testCase name="App.vue toggles the menu when burger it&apos;s clicked" duration="17"/>
   </file>
 </testExecutions>
