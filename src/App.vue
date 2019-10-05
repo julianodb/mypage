@@ -2,6 +2,9 @@
   <div id="app" class="container">
     <nav id="nav" class="navbar">
       <div class="navbar-brand">
+        <router-link to="/" class="navbar-item">
+          <h1 class="title">Juliano's Page</h1>
+        </router-link>
         <a
           class="navbar-burger burger"
           data-target="navbarMenu"
@@ -51,6 +54,7 @@ export default {
 
 <style lang="scss">
 @import "../node_modules/bulma/sass/utilities/initial-variables.sass";
-$body-background-color: $green;
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+$body-background-color: $light;
 @import "bulma";
 </style>
